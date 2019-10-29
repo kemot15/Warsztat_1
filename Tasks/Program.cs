@@ -6,7 +6,17 @@ namespace Tasks
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            while (true)
+            {
+                string command = Menu.mainMenu();
+                if (command.Equals("0"))
+                {
+                    break;
+                }
+                else if (command.Equals("1")){
+                    Console.WriteLine("dodawanie tasku");
+                }
+            }
         }
     }
 }
